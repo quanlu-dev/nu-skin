@@ -1,0 +1,373 @@
+.hero-section {
+  margin-top: 20px;
+}
+
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+
+  width: 76%;
+  margin-left: auto;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: 520px;
+
+  object-fit: cover;
+  display: block;
+}
+
+/* OVERLAY */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0,0,0,0.35);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  font-weight: bold;
+
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  border: none;
+  background: white;
+
+  padding: 14px 30px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  background: purple;
+  color: white;
+}
+
+/* ARROW */
+
+.arrow-btn {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+
+  background: rgba(0,0,0,0.3);
+  color: white;
+
+  font-size: 24px;
+
+  transition: 0.3s;
+
+  z-index: 10;
+}
+
+.arrow-btn:hover {
+  background: purple;
+}
+
+.arrow-left {
+  left: 30px;
+}
+
+.arrow-right {
+  right: 30px;
+}
+
+/* SMALL BANNERS */
+
+.banner-section {
+  width: 76%;
+
+  margin-left: auto;
+  margin-top: 35px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+.banner-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-item img {
+  width: 100%;
+  height: 260px;
+
+  object-fit: cover;
+  display: block;
+
+  transition: 0.5s;
+}
+
+.banner-item:hover img {
+  transform: scale(1.05);
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(255,255,255,0.25);
+
+  padding: 0px 40px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-overlay p {
+  font-size: 18px;
+  color: #333;
+
+  margin-bottom: 10px;
+}
+
+.banner-overlay h3 {
+  font-size: 25px;
+  font-weight: bold;
+
+  color: #111;
+
+  margin-bottom: 30px;
+}
+
+.banner-overlay button {
+  width: fit-content;
+
+  border: 1px solid #d6b6b6;
+  background: transparent;
+
+  padding: 12px 28px;
+
+  transition: 0.3s;
+}
+
+.banner-overlay button:hover {
+  background: purple;
+  color: white;
+  border-color: purple;
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO TABLET (Màn hình < 1024px) */
+/* ========================================= */
+@media (max-width: 1024px) {
+  .hero-section {
+    margin-top: 15px;
+  }
+
+  .hero-slider {
+    width: 90%;
+  }
+
+  .hero-slider img {
+    height: 400px;
+  }
+
+  .hero-content p {
+    font-size: 26px;
+  }
+
+  .hero-content h1 {
+    font-size: 56px;
+  }
+
+  .hero-content button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .arrow-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  .arrow-left {
+    left: 20px;
+  }
+
+  .arrow-right {
+    right: 20px;
+  }
+
+  .banner-section {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .banner-item img {
+    height: 200px;
+  }
+
+  .banner-overlay p {
+    font-size: 16px;
+  }
+
+  .banner-overlay h3 {
+    font-size: 22px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO MOBILE (Màn hình < 768px) */
+/* ========================================= */
+@media (max-width: 768px) {
+  .hero-section {
+    margin-top: 10px;
+  }
+
+  .hero-slider {
+    width: 100%;
+  }
+
+  .hero-slider img {
+    height: 300px;
+  }
+
+  .hero-overlay {
+    padding: 20px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .hero-content button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .arrow-left {
+    left: 10px;
+  }
+
+  .arrow-right {
+    right: 10px;
+  }
+
+  .banner-section {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .banner-item img {
+    height: 150px;
+  }
+
+  .banner-overlay {
+    padding: 0 20px 20px;
+  }
+
+  .banner-overlay p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .banner-overlay h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .banner-overlay button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE ĐIỆN THOẠI NHỎ (Màn hình < 576px) */
+/* ========================================= */
+@media (max-width: 576px) {
+  .hero-slider img {
+    height: 220px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .arrow-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .banner-section {
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .banner-item img {
+    height: 120px;
+  }
+
+  .banner-overlay p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .banner-overlay h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .banner-overlay button {
+    padding: 8px 15px;
+    font-size: 11px;
+  }
+}

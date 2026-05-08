@@ -1,0 +1,35 @@
+/* ========================================= */
+/* HOME PAGE RESPONSIVE STYLES */
+/* ========================================= */
+
+/* Desktop - Full width container */
+.home-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* General responsive adjustments */
+@media (max-width: 1024px) {
+  .home-container {
+    max-width: 1000px;
+    padding: 0 15px;
+  }
+}
+
+/* Tablet (max 768px) */
+@media (max-width: 768px) {
+  .home-container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+/* Small Mobile (max 576px) */
+@media (max-width: 576px) {
+  .home-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

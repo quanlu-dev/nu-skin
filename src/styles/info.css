@@ -1,0 +1,295 @@
+.impact-section-full {
+  width: 100%;
+  padding: 40px 0; 
+  display: flex;
+  justify-content: center;
+}
+
+.impact-container-full {
+  background-color: #fff;
+  /* KÉO FULL WIDTH */
+  width: 100%; 
+  max-width: 100%; /* Đảm bảo không bị giới hạn ở màn hình lớn */
+  
+  /* Khoảng cách nội dung so với mép màn hình */
+  padding: 60px 50px; 
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* GIỮ VIỀN MỜ */
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  /* Khi full width, thường người ta chỉ đổ bóng nhẹ hoặc bỏ border trái/phải */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.impact-left {
+  flex: 1;
+}
+
+.impact-left h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.impact-right {
+  display: flex;
+  gap: 120px; 
+  justify-content: flex-start; 
+  flex: 1; 
+}
+
+.stat-item {
+  min-width: fit-content;
+}
+
+.stat-item h3 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 3px;
+  display: inline-block;
+}
+/* Tăng cường CSS để đạt được bố cục 4 viên gạch bằng nhau, full width, dấu cộng hoàn hảo */
+.info-grid-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* TẠO KHE HỞ CHIỀU DỌC GIỮA 2 HÀNG. 
+     Tăng giá trị gap để dấu cộng rõ ràng hơn, ví dụ: 20px */
+  gap: 20px; 
+  /* Màu nền của dấu cộng (giữa các ô), thường là màu nền website */
+  background-color: #fff; 
+}
+
+.info-row {
+  display: flex;
+  width: 100%;
+  gap: 20px; 
+  /* height: 400px;  <-- Xóa dòng này đi nếu đang có */
+}
+
+.info-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.info-image, .info-content {
+  /* Ép cứng chiều rộng chính xác 50% (trừ đi khe hở ở giữa) */
+  width: calc((100% - 20px) / 2); 
+  
+  /* CHÌA KHÓA GIẢI QUYẾT: Dùng tỉ lệ hình chữ nhật thay vì 1/1 */
+  aspect-ratio: 16 / 10; /* Chiều ngang 16 phần, chiều cao 10 phần */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.info-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ảnh lấp đầy hình vuông mà không méo */
+  display: block;
+}
+
+.info-content {
+  background-color: #f2f7f9;
+  
+  /* ĐẢM BẢO CÁC THUỘC TÍNH FLEX NÀY VẪN ĐANG CÓ (nếu lỡ xóa thì thêm lại nhé) */
+  display: flex;
+  flex-direction: column;
+  
+  /* Đẩy lên trên và sát trái */
+  justify-content: flex-start; 
+  align-items: flex-start;     
+  text-align: left;            
+  
+  /* Đổi padding sang pixel. 
+     Số đầu (40px) là khoảng cách từ viền trên/dưới dội vào.
+     Số sau (50px) là khoảng cách từ viền trái/phải dội vào. 
+     Bạn có thể giảm số này xuống (ví dụ 30px) nếu muốn nó sát mép hơn nữa. */
+  padding: 40px 50px; 
+}
+
+.info-content h2 {
+  font-size: clamp(24px, 3vw, 40px); 
+  font-weight: 500;
+  color: #222;
+  
+  /* QUAN TRỌNG NHẤT: Xóa khoảng trống tàng hình mặc định phía trên của thẻ h2 */
+  margin-top: 0; 
+  
+  margin-bottom: 20px;
+}
+
+.info-content p {
+  font-size: clamp(13px, 1.3vw, 15px);
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 90%; 
+}
+
+.info-link {
+  font-size: 14px;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+  padding-bottom: 2px;
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO TABLET (Màn hình < 1024px) */
+/* ========================================= */
+@media (max-width: 1024px) {
+  .impact-container-full {
+    padding: 40px 30px;
+  }
+
+  .impact-left h2 {
+    font-size: 30px;
+  }
+
+  .impact-right {
+    gap: 80px;
+  }
+
+  .stat-item h3 {
+    font-size: 30px;
+  }
+
+  .info-content h2 {
+    font-size: clamp(20px, 2.5vw, 36px);
+  }
+
+  .info-content p {
+    font-size: clamp(12px, 1.1vw, 14px);
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO MOBILE (Màn hình < 768px) */
+/* ========================================= */
+@media (max-width: 768px) {
+  .impact-container-full {
+    padding: 30px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .impact-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .impact-right {
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .stat-item h3 {
+    font-size: 24px;
+  }
+
+  .stat-item p {
+    font-size: 12px;
+  }
+
+  .info-grid-section {
+    gap: 15px;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .info-row.reverse {
+    flex-direction: column;
+  }
+
+  .info-image, .info-content {
+    width: 100%;
+    aspect-ratio: auto;
+    min-height: 250px;
+  }
+
+  .info-image img {
+    height: 250px;
+  }
+
+  .info-content {
+    padding: 25px 20px;
+  }
+
+  .info-content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .info-content p {
+    font-size: 13px;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE ĐIỆN THOẠI NHỎ (Màn hình < 576px) */
+/* ========================================= */
+@media (max-width: 576px) {
+  .impact-container-full {
+    padding: 20px 15px;
+  }
+
+  .impact-left h2 {
+    font-size: 20px;
+  }
+
+  .impact-right {
+    gap: 25px;
+  }
+
+  .stat-item h3 {
+    font-size: 20px;
+  }
+
+  .info-image, .info-content {
+    min-height: 200px;
+  }
+
+  .info-image img {
+    height: 200px;
+  }
+
+  .info-content {
+    padding: 20px 15px;
+  }
+
+  .info-content h2 {
+    font-size: 18px;
+  }
+
+  .info-content p {
+    font-size: 12px;
+  }
+}

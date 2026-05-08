@@ -1,0 +1,173 @@
+.footer {
+  background: #5b1167;
+  color: white;
+  margin-top: 80px;
+}
+
+.footer-top {
+  padding: 70px 0;
+}
+
+.footer-desc {
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 50px;  
+  margin-bottom: 30px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 50px;  
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: pink;
+  transform: translateX(5px);
+}
+
+/* BOTTOM */
+
+.footer-bottom {
+  border-top: 3px solid #ada6a6;
+  padding: 15px 0;
+  background: #4a0d54;
+}
+
+.footer-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.copyright span {
+  font-weight: bold;
+}
+
+.payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 42px;
+}
+
+.payment-icons svg {
+  transition: 0.3s;
+}
+
+.payment-icons svg:hover {
+  transform: translateY(-3px);
+}
+
+/* BRAND COLORS */
+
+.visa {
+  color: #1a1f71;
+}
+
+.mastercard {
+  color: #eb001b;
+}
+
+.paypal {
+  color: #003087;
+}
+
+.amex {
+  color: #2e77bb;
+}
+
+.discover {
+  color: #ff6000;
+}
+
+.gpay {
+  color: #4285f4;
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO TABLET (Màn hình < 992px)  */
+/* ========================================= */
+@media (max-width: 992px) {
+  .footer-title,
+  .footer-links {
+    padding-left: 20px; /* Giảm khoảng lùi để không bị chật */
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO MOBILE (Màn hình < 768px)  */
+/* ========================================= */
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 50px; /* Giảm khoảng cách với phần trên */
+  }
+
+  .footer-top {
+    padding: 40px 20px; /* Thêm padding 2 bên để chữ không chạm mép */
+  }
+
+  .footer-title,
+  .footer-links {
+    padding-left: 0; /* Xóa bỏ hoàn toàn khoảng lùi trên mobile */
+  }
+
+  .footer-title {
+    margin-top: 30px; /* Tạo khoảng cách giữa các cột khi xếp dọc */
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .footer-desc {
+    margin-bottom: 20px;
+  }
+
+  /* --- BOTTOM FOOTER --- */
+  .footer-bottom-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .payment-icons {
+    flex-wrap: wrap; /* Cho phép các icon rớt dòng nếu màn hình quá nhỏ */
+    justify-content: center; /* Căn giữa các icon */
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE ĐIỆN THOẠI NHỎ (Màn hình < 576px) */
+/* ========================================= */
+@media (max-width: 576px) {
+  .payment-icons {
+    gap: 10px;
+    font-size: 32px; /* Thu nhỏ icon thanh toán lại một chút */
+  }
+
+  .footer-contact p {
+    font-size: 14px;
+  }
+}

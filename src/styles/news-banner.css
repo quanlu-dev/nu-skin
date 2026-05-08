@@ -1,0 +1,219 @@
+.news-wrapper {
+  padding: 60px 40px; 
+  display: flex;
+  gap: 100px;
+  width: 100%;
+  background: #ffffff; /* Đổi nền thành màu trắng tinh giống ảnh */
+}
+/* Đảm bảo phần content bên trái vẫn chiếm 78% */
+.news-content {
+  flex: 1;
+  width: 73%; /* Tỷ lệ để chừa chỗ cho banner bên phải */
+}
+/* CUSTOM STYLE CHO THẺ NEWS (Bỏ giá, tên, nút) */
+.news-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  
+  /* Tạo viền bao quanh TOÀN BỘ thẻ giống hình */
+  border: 1px solid #e0e0e0; 
+  transition: transform 0.3s ease;
+}
+.news-card:hover {
+  transform: translateY(-5px); /* Hiệu ứng nhẹ khi di chuột vào (tuỳ chọn) */
+}
+.news-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover; 
+  display: block;
+  /* Đã bỏ border ở đây vì thẻ cha .news-card đã có border */
+}
+.news-card-content {
+  padding: 25px 15px;
+  flex-grow: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Đã bỏ border ở đây */
+}
+.news-card-content p {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+.news-banner {
+  width: 27%; /* Độ rộng của banner */
+  position: relative;
+  /* Nếu bạn muốn banner tự động cao bằng phần danh sách thẻ bên trái */
+  display: flex; 
+  flex-direction: column;
+}
+.news-banner img {
+  width: 100%;
+  height: 100%; /* Phủ kín chiều cao container */
+  min-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+.news-banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Căn giữa tuyệt đối vào tâm ảnh */
+  
+  z-index: 5;
+  width: 100%;
+  text-align: center; 
+}
+.news-banner-overlay h2 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #ffffff; /* Màu trắng */
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.news-banner-overlay p {
+  font-size: 15px;
+  color: #ffffff; /* Màu trắng */
+  font-weight: 500;
+  
+  /* Tạo đường gạch dưới nét liền 2px-3px */
+  border-bottom: 2px solid #ffffff; 
+  display: inline-block; 
+  padding-bottom: 4px;
+  margin: 0;
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO TABLET (Màn hình < 1024px) */
+/* ========================================= */
+@media (max-width: 1024px) {
+  .news-wrapper {
+    gap: 50px;
+    padding: 40px 25px;
+    flex-direction: column;
+  }
+
+  .news-content {
+    width: 100%;
+    flex: 1;
+  }
+
+  .news-banner {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .news-banner img {
+    min-height: 300px;
+  }
+
+  .news-banner-overlay h2 {
+    font-size: 32px;
+  }
+
+  .news-banner-overlay p {
+    font-size: 14px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO MOBILE (Màn hình < 768px) */
+/* ========================================= */
+@media (max-width: 768px) {
+  .news-wrapper {
+    padding: 30px 15px;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .news-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .news-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-card img {
+    height: 200px;
+  }
+
+  .news-card-content {
+    padding: 20px 15px;
+  }
+
+  .news-card-content p {
+    font-size: 13px;
+  }
+
+  .news-banner {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .news-banner img {
+    min-height: 250px;
+  }
+
+  .news-banner-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .news-banner-overlay p {
+    font-size: 12px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE ĐIỆN THOẠI NHỎ (Màn hình < 576px) */
+/* ========================================= */
+@media (max-width: 576px) {
+  .news-wrapper {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .news-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .news-card img {
+    height: 150px;
+  }
+
+  .news-card-content {
+    padding: 15px 10px;
+  }
+
+  .news-card-content p {
+    font-size: 12px;
+  }
+
+  .news-banner {
+    min-height: 200px;
+  }
+
+  .news-banner img {
+    min-height: 200px;
+  }
+
+  .news-banner-overlay h2 {
+    font-size: 20px;
+  }
+
+  .news-banner-overlay p {
+    font-size: 11px;
+  }
+}

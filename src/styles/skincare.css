@@ -1,0 +1,254 @@
+.skincare-section {
+  width: 100%;
+  background: #e6f3ec; /* xanh lá nhạt */
+  margin-top: 10px;
+  padding: 20px 0;
+  margin-bottom: 150px;
+}
+
+/* CONTAINER */
+.skincare-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* LEFT */
+.skincare-left {
+  position: relative;
+  flex: 1;
+}
+
+.skincare-img {
+  height: 100%;
+  object-fit: contain;
+  padding: 100px 0;
+  margin-left: -80px;
+}
+
+/* SALE BADGE */
+.sale-badge {
+  position: absolute;
+  top: 70px;
+  right: 220px;
+  width: 80px;
+  height: 80px;
+  background: purple;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  z-index: 5;
+}
+
+.sale-badge p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.sale-badge h4 {
+  font-size: 18px;
+  margin: 5px 0 0;
+}
+
+/* RIGHT */
+.skincare-right {
+  flex: 1;
+  padding-left: 60px;
+  padding-bottom: 300px;
+}
+
+.skincare-right .brand {
+  color: red;
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.skincare-right .title {
+  font-size: 28px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.skincare-right .desc {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* BUTTON */
+.shop-btn {
+  background: purple;
+  color: white;
+
+  border: none;
+  padding: 14px 28px;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.shop-btn:hover {
+  background: #3d0646;
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO TABLET (Màn hình < 1024px) */
+/* ========================================= */
+@media (max-width: 1024px) {
+  .skincare-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .skincare-left {
+    width: 100%;
+  }
+
+  .skincare-img {
+    padding: 50px 0;
+    margin-left: 0;
+  }
+
+  .sale-badge {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .skincare-right {
+    flex: 1;
+    padding-left: 30px;
+    padding-bottom: 100px;
+  }
+
+  .skincare-right .title {
+    font-size: 24px;
+  }
+
+  .skincare-right .desc {
+    font-size: 15px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO MOBILE (Màn hình < 768px) */
+/* ========================================= */
+@media (max-width: 768px) {
+  .skincare-section {
+    margin-bottom: 80px;
+    padding: 15px 0;
+  }
+
+  .skincare-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skincare-left {
+    width: 100%;
+  }
+
+  .skincare-img {
+    padding: 30px 0;
+    margin-left: 0;
+    height: 200px;
+  }
+
+  .sale-badge {
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .sale-badge p {
+    font-size: 12px;
+  }
+
+  .sale-badge h4 {
+    font-size: 16px;
+  }
+
+  .skincare-right {
+    padding-left: 0;
+    padding-bottom: 0;
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .skincare-right .brand {
+    font-size: 13px;
+  }
+
+  .skincare-right .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .skincare-right .desc {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .shop-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE ĐIỆN THOẠI NHỎ (Màn hình < 576px) */
+/* ========================================= */
+@media (max-width: 576px) {
+  .skincare-section {
+    margin-bottom: 60px;
+  }
+
+  .skincare-img {
+    padding: 20px 0;
+    height: 150px;
+  }
+
+  .sale-badge {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sale-badge p {
+    font-size: 10px;
+  }
+
+  .sale-badge h4 {
+    font-size: 14px;
+  }
+
+  .skincare-right .brand {
+    font-size: 12px;
+  }
+
+  .skincare-right .title {
+    font-size: 18px;
+  }
+
+  .skincare-right .desc {
+    font-size: 12px;
+  }
+
+  .shop-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}

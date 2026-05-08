@@ -1,0 +1,210 @@
+.awards-container {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+
+.awards-header-banner {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.banner-bg-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.header-overlay-content {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+  text-align: center; 
+  z-index: 2;
+  white-space: nowrap; 
+  width: auto; 
+}
+
+.header-right {
+  text-align: right;
+}
+
+.world-no1 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: black;
+  margin: 0;
+  font-weight: 500;
+}
+.header-overlay-content h2 {
+  font-size: 32px; 
+  font-weight: 400;
+  color: #333;
+  margin: 5px 0;
+  line-height: 1.2;
+  display: block; 
+}
+.source-text {
+  font-style: italic;
+  font-size: 12px;
+  color: black;
+  margin-top: 5px;
+}
+
+/* Grid layout */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 30px;
+  gap: 20px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.award-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.award-logo {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.award-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.award-info h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  min-height: 40px;
+}
+
+.award-info p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO TABLET (Màn hình < 1024px) */
+/* ========================================= */
+@media (max-width: 1024px) {
+  .awards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    gap: 15px;
+  }
+
+  .award-logo {
+    height: 140px;
+  }
+
+  .award-info h3 {
+    font-size: 24px;
+  }
+
+  .award-info p {
+    font-size: 14px;
+  }
+
+  .header-overlay-content h2 {
+    font-size: 26px;
+  }
+
+  .world-no1 {
+    font-size: 18px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO MOBILE (Màn hình < 768px) */
+/* ========================================= */
+@media (max-width: 768px) {
+  .awards-container {
+    padding: 20px 0;
+    padding-bottom: 60px;
+  }
+
+  .awards-header-banner {
+    margin-bottom: 30px;
+  }
+
+  .header-overlay-content {
+    right: 20px;
+  }
+
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 95%;
+    gap: 15px;
+  }
+
+  .award-logo {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .award-info h3 {
+    font-size: 18px;
+    min-height: auto;
+    margin-bottom: 5px;
+  }
+
+  .award-info p {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+
+  .header-overlay-content h2 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .world-no1 {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .source-text {
+    font-size: 10px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE ĐIỆN THOẠI NHỎ (Màn hình < 576px) */
+/* ========================================= */
+@media (max-width: 576px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .award-logo {
+    height: 80px;
+  }
+
+  .award-info h3 {
+    font-size: 16px;
+  }
+
+  .award-info p {
+    font-size: 11px;
+  }
+}

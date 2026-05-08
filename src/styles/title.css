@@ -1,0 +1,96 @@
+.section-title-wrapper {
+  width: 100%;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  background: purple;
+  color: white;
+
+  min-width: 420px;
+  height: 62px;
+
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.title-line {
+  flex: 1;
+  height: 2px;
+    
+  background: white;
+}
+
+.section-title span:nth-child(2) {
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO TABLET (Màn hình < 1024px) */
+/* ========================================= */
+@media (max-width: 1024px) {
+  .section-title-wrapper {
+    margin: 0 auto 40px;
+    padding-bottom: 35px;
+  }
+
+  .section-title {
+    min-width: 300px;
+    height: 55px;
+    font-size: 26px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO MOBILE (Màn hình < 768px) */
+/* ========================================= */
+@media (max-width: 768px) {
+  .section-title-wrapper {
+    margin: 0 auto 30px;
+    padding-bottom: 25px;
+  }
+
+  .section-title {
+    min-width: 250px;
+    height: 50px;
+    font-size: 22px;
+    border-radius: 12px;
+  }
+
+  .title-line {
+    display: none;
+  }
+
+  .section-title span:nth-child(2) {
+    padding: 0;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE ĐIỆN THOẠI NHỎ (Màn hình < 576px) */
+/* ========================================= */
+@media (max-width: 576px) {
+  .section-title-wrapper {
+    margin: 0 auto 20px;
+    padding: 0 15px 15px;
+    padding-bottom: 15px;
+  }
+
+  .section-title {
+    min-width: auto;
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 0 15px;
+  }
+}

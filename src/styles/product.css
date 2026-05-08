@@ -1,0 +1,519 @@
+.popular-banner {
+  width: 22%;
+  flex-shrink: 0;
+
+  position: relative;
+
+  min-height: 720px;
+  margin-top: -60px;
+}
+
+.popular-banner-overlay {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+
+  z-index: 5;
+}
+
+.popular-banner-overlay h2 {
+  font-size: 28px;
+  line-height: 1.4;
+
+  color: #222;
+
+  margin-bottom: 40px;
+}
+
+.popular-banner-overlay p {
+  font-size: 18px;
+  color: #333;
+}
+.product-section {
+  width: 100%;
+  margin-top: 150px;
+}
+
+/* POPULAR SECTION */
+
+.popular-wrapper {
+  background: #eef5f7;
+  padding: 90px 40px 40px;
+  margin-top: -30px;
+  display: flex;
+  gap: 35px;
+  width: 100%;
+}
+
+
+.popular-banner img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+}
+
+/* RIGHT */
+
+.popular-content {
+  flex: 1;
+  width: 78%;
+}
+
+/* TOP */
+
+.popular-top {
+  display: flex;
+  justify-content: flex-end; /* Đẩy chữ "View All >>" sang sát lề phải */
+  margin-bottom: 20px;
+}
+.popular-actions a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.popular-actions a:hover {
+  text-decoration: underline;
+}
+.popular-tabs {
+  display: flex;
+}
+
+.popular-tabs button {
+  border: none;
+  border-top: 4px solid transparent;
+
+  background: transparent;
+
+  padding: 16px 45px;
+
+  font-weight: 700;
+  color: #b7b7b7;
+
+  transition: 0.3s;
+
+  position: relative;
+}
+
+/* LINE BETWEEN */
+
+.popular-tabs button:first-child::after {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  right: 0;
+
+  width: 1px;
+  height: 28px;
+
+  background: #ddd;
+}
+
+.popular-tabs .active-tab {
+  border-top: 4px solid #d4a63d;
+
+  color: #222;
+}
+
+.popular-top a {
+  color: #333;
+  font-weight: 600;
+}
+
+/* PRODUCTS */
+
+.popular-products {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+}
+
+/* CARD */
+
+.popular-card {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.popular-card img {
+  width: 100%;
+  height: 260px;
+
+  object-fit: contain;
+
+  padding: 20px;
+
+  background: white;
+}
+.popular-card-content {
+  background: #eef5f7;
+
+  border: 1px solid #dfe7ea;
+  border-top: none;
+
+  padding-top: 25px;
+}
+.product-brand,
+.popular-card h4,
+.price-box {
+  padding: 0 20px;
+}
+/* SALE */
+
+.sale-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  background: #79c94b;
+  color: white;
+
+  padding: 5px 12px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* TEXT */
+
+.product-brand {
+  color: #bbb;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.popular-card h4 {
+  font-size: 24px;
+
+  margin-bottom: 15px;
+}
+
+.price-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.new-price {
+  color: #d4a63d;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* BUTTON */
+
+.popular-card button {
+  width: 100%;
+  border: none;
+  background: purple;
+  color: white;
+  padding: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.popular-card button:hover {
+  background: #3d0646;
+}
+
+.popular-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.popular-products-wrapper {
+  position: relative;
+}
+
+.side-arrow {
+  position: absolute;
+  top: 42%;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  color: #222;
+  opacity: 0.5;
+
+  font-size: 20px;
+
+  z-index: 10;
+
+  transition: 0.3s;
+}
+
+
+.left-arrow {
+  left: -40px;
+}
+
+.right-arrow {
+  right: -40px;
+}
+
+
+.product-arrows button:hover {
+  background: purple;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 35px;
+}
+
+.slider-dots span {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 999px;
+
+  background: #bbb;
+
+  transition: 0.4s;
+
+  cursor: pointer;
+}
+
+.slider-dots .active-dot {
+  width: 42px;
+
+  background: #222;
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO TABLET (Màn hình < 1024px) */
+/* ========================================= */
+@media (max-width: 1024px) {
+  .popular-wrapper {
+    padding: 70px 25px 30px;
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .popular-banner {
+    width: 100%;
+    margin-top: 0;
+    min-height: 400px;
+  }
+
+  .popular-banner-overlay {
+    top: 30px;
+    left: 20px;
+  }
+
+  .popular-banner-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .popular-banner-overlay p {
+    font-size: 16px;
+  }
+
+  .popular-content {
+    width: 100%;
+  }
+
+  .popular-products {
+    gap: 15px;
+  }
+
+  .popular-card img {
+    height: 200px;
+  }
+
+  .popular-card h4 {
+    font-size: 20px;
+  }
+
+  .new-price {
+    font-size: 22px;
+  }
+
+  .popular-tabs button {
+    padding: 14px 30px;
+    font-size: 14px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CHO MOBILE (Màn hình < 768px) */
+/* ========================================= */
+@media (max-width: 768px) {
+  .popular-wrapper {
+    padding: 40px 15px 20px;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .popular-banner {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .popular-banner-overlay {
+    top: 20px;
+    left: 15px;
+  }
+
+  .popular-banner-overlay h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .popular-banner-overlay p {
+    font-size: 14px;
+  }
+
+  .popular-top {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .popular-tabs {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .popular-tabs button {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+
+  .popular-products {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .popular-card img {
+    height: 150px;
+  }
+
+  .popular-card h4 {
+    font-size: 16px;
+  }
+
+  .product-brand {
+    font-size: 12px;
+  }
+
+  .new-price {
+    font-size: 18px;
+  }
+
+  .popular-card button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    display: none;
+  }
+
+  .slider-dots {
+    margin-top: 20px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE ĐIỆN THOẠI NHỎ (Màn hình < 576px) */
+/* ========================================= */
+@media (max-width: 576px) {
+  .popular-wrapper {
+    padding: 30px 10px 15px;
+  }
+
+  .popular-banner {
+    min-height: 250px;
+  }
+
+  .popular-banner-overlay h2 {
+    font-size: 18px;
+  }
+
+  .popular-banner-overlay p {
+    font-size: 12px;
+  }
+
+  .popular-tabs button {
+    padding: 10px 15px;
+    font-size: 11px;
+  }
+
+  .popular-card img {
+    height: 120px;
+  }
+
+  .popular-card h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .price-box {
+    margin-bottom: 15px;
+  }
+
+  .new-price {
+    font-size: 16px;
+  }
+
+  .old-price {
+    font-size: 12px;
+  }
+
+  .popular-card button {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .product-brand,
+  .popular-card h4,
+  .price-box {
+    padding: 0 10px;
+  }
+}
+
+.product-section {
+  width: 100%;
+  margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .product-section {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-section {
+    margin-top: 50px;
+  }
+}

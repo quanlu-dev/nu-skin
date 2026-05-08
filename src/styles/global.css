@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* ========================================= */
+/* RESPONSIVE BASE STYLES */
+/* ========================================= */
+
+/* Tablet (max 1024px) */
+@media (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Mobile (max 768px) */
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* Small Mobile (max 576px) */
+@media (max-width: 576px) {
+  body {
+    font-size: 13px;
+  }
+}
