@@ -34,7 +34,7 @@ function Home() {
           <div className="hero-slider">
 
             <img
-              src="/src/assets/home-nuskin.webp"
+              src="/images/home-nuskin.webp"
               alt=""
             />
 
@@ -76,7 +76,7 @@ function Home() {
           <div className="banner-item">
 
             <img
-              src="/src/assets/home-top1.webp"
+              src="/images/home-top1.webp"
               alt=""
             />
 
@@ -95,7 +95,7 @@ function Home() {
           <div className="banner-item">
 
             <img
-              src="/src/assets/home-top2.webp"
+              src="/images/home-top2.webp"
               alt=""
             />
 
@@ -137,7 +137,7 @@ function Home() {
             <div className="popular-banner">
 
               <img
-                src="/src/assets/background-2.png"
+                src="/images/background-2.png"
                 alt=""
               />
               <div className="popular-banner-overlay">
@@ -204,7 +204,7 @@ function Home() {
      SALE
    </div>
    <img
-     src="/src/assets/sp2.avif"
+     src="/images/sp2.avif"
      alt=""
    />
    <div className="popular-card-content">
@@ -242,7 +242,7 @@ function Home() {
      SALE
    </div>
    <img
-     src="/src/assets/sp1.avif"
+     src="/images/sp1.avif"
      alt=""
    />
    <div className="popular-card-content">
@@ -275,7 +275,7 @@ function Home() {
     SALE
   </div>
     <img
-    src="/src/assets/sp2.avif"
+    src="/images/sp2.avif"
     alt=""
 />
   <div className="popular-card-content">
@@ -318,7 +318,7 @@ function Home() {
     {/* LEFT IMAGE */}
     <div className="skincare-left">
       <img
-        src="/src/assets/machine.jpg"
+        src="/images/machine.jpg"
         alt=""
         className="skincare-img"
       />
@@ -363,7 +363,7 @@ function Home() {
 <section className="awards-container">
   {/* Header banner với các thiết bị */}
   <div className="awards-header-banner">
-  <img src="/src/assets/banner3.avif" alt="Beauty Devices" className="banner-bg-img" />
+  <img src="/images/banner3.avif" alt="Beauty Devices" className="banner-bg-img" />
   
   <div className="header-overlay-content">
     <p className="world-no1">WORLD'S #1 COMPANY FOR</p>
@@ -377,7 +377,7 @@ function Home() {
     {/* Award 1 */}
     <div className="award-item">
       <div className="award-logo">
-        <img src="/src/assets/aw1.png" alt="NewBeauty Award" />
+        <img src="/images/aw1.png" alt="NewBeauty Award" />
       </div>
       <div className="award-info">
         <h3>ageLOC® LumiSpa® iO</h3>
@@ -388,7 +388,7 @@ function Home() {
     {/* Award 2 */}
     <div className="award-item">
       <div className="award-logo">
-        <img src="/src/assets/aw2.png" alt="Beauty Bible" />
+        <img src="/images/aw2.png" alt="Beauty Bible" />
       </div>
       <div className="award-info">
         <h3>Epoch Baobab Body Butter</h3>
@@ -399,7 +399,7 @@ function Home() {
     {/* Award 3 */}
     <div className="award-item">
       <div className="award-logo">
-        <img src="/src/assets/aw3.png" alt="Global Makeup Awards" />
+        <img src="/images/aw3.png" alt="Global Makeup Awards" />
       </div>
       <div className="award-info">
         <h3>Nu Skin Enterprises</h3>
@@ -410,7 +410,7 @@ function Home() {
     {/* Award 4 */}
     <div className="award-item">
       <div className="award-logo">
-        <img src="/src/assets/aw4.png" alt="Global Green Beauty" />
+        <img src="/images/aw4.png" alt="Global Green Beauty" />
       </div>
       <div className="award-info">
         <h3>Epoch® Yin & Yang Mask</h3>
@@ -421,7 +421,7 @@ function Home() {
     {/* Award 5 */}
     <div className="award-item">
       <div className="award-logo">
-        <img src="/src/assets/aw5.png" alt="InStyle" />
+        <img src="/images/aw5.png" alt="InStyle" />
       </div>
       <div className="award-info">
         <h3>ageLOC® Facial Spa</h3>
@@ -432,7 +432,7 @@ function Home() {
     {/* Award 6 */}
     <div className="award-item">
       <div className="award-logo">
-        <img src="/src/assets/aw6.png" alt="Pure Beauty" />
+        <img src="/images/aw6.png" alt="Pure Beauty" />
       </div>
       <div className="award-info">
         <h3>Nutricentials® Eye Love Bright Eyes</h3>
@@ -487,7 +487,7 @@ function Home() {
   
   <div className="info-row">
     <div className="info-image">
-      <img src="/src/assets/children.png" alt="Children" />
+      <img src="/images/children.png" alt="Children" />
     </div>
     <div className="info-content">
       <h2>Being a Force for Good</h2>
@@ -504,7 +504,7 @@ function Home() {
   
   <div className="info-row reverse">
     <div className="info-image">
-      <img src="/src/assets/bottle.png" alt="Bottle" />
+      <img src="/images/bottle.png" alt="Bottle" />
     </div>
     <div className="info-content">
       <h2>Nature + Science</h2>
@@ -545,7 +545,7 @@ function Home() {
       <div className="popular-products">
         {/* CARD 1 */}
         <div className="news-card">
-          <img src="/src/assets/ITN_self.png" alt="" />
+          <img src="/images/ITN_self.png" alt="" />
           <div className="news-card-content">
             <p>
               38 New Beauty Products <br />
@@ -557,7 +557,7 @@ function Home() {
 
         {/* CARD 2 */}
         <div className="news-card">
-          <img src="/src/assets/Popsugar_News.png" alt="" />
+          <img src="/images/Popsugar_News.png" alt="" />
           <div className="news-card-content">
             <p>
               38 New Beauty Products <br />
@@ -569,7 +569,7 @@ function Home() {
 
         {/* CARD 3 */}
         <div className="news-card">
-          <img src="/src/assets/2022_New-Beauty.png" alt="" />
+          <img src="/images/2022_New-Beauty.png" alt="" />
           <div className="news-card-content">
             <p>
               38 New Beauty Products <br />
@@ -593,7 +593,7 @@ function Home() {
   </div>
 
   <div className="news-banner">
-    <img src="/src/assets/bannerbt.png" alt="" />
+    <img src="/images/bannerbt.png" alt="" />
     <div className="news-banner-overlay">
       <h2>News</h2>
       <p>Nu Skin In The News</p>
