@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { handleSearch } from '../controllers/searchController'
 
 
-import '../styles/header.css'
+import '../styles/hheader.css'
 import {
   FaFacebookF,
   FaTwitter,
